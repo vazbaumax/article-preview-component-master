@@ -1,0 +1,192 @@
+/* Fonts imports */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+/* Color Variables */
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+
+  font-size: 13px;
+}
+
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-grayish-blue);
+  font-family: Manrope, sans-serif;
+  font-weight: 500;
+  color: var(--desaturated-dark-blue);
+}
+
+/* Custom CSS for Mobile */
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 375px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.card-header {
+  width: 327px;
+  height: 202px;
+  background-image: url(/article-preview-component-master/images/drawers.jpg);
+  background-repeat: no-repeat no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+}
+
+.card-text {
+  width: 100%;
+  padding: 35px;
+}
+
+.card-text__title {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1%;
+  line-height: 24px;
+  color: var(--desaturated-dark-blue);
+}
+
+.card-text__excerpt {
+  margin-top: 15px;
+  line-height: 20px;
+  color: var(--desaturated-dark-blue);
+  font-size: 13px;
+  letter-spacing: 2%;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 327px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 35px;
+}
+
+.card-footer__author {
+  display: flex;
+  align-items: center;
+}
+
+.card-footer__author__avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.card-footer__author__text {
+  padding-left: 10px;
+}
+
+.card-footer__author__text-title {
+  font-weight: 700;
+}
+.card-footer__author__text-date {
+  padding-top: 8px;
+}
+
+.card-footer__author__share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--light-grayish-blue);
+  text-align: center;
+  border-radius: 50%;
+}
+
+.card-footer__author__share_icon {
+  width: 12px;
+  height: 12px;
+}
+
+#flotante {
+  display: none;
+}
+
+/* Custom CSS for Desktop */
+@media only screen and (min-width: 891px) {
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    min-width: 1116px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 726px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 8px;
+    justify-content: space-between;
+  }
+
+  .card-header {
+    width: 100%;
+    height: 280px;
+    background-image: url(/article-preview-component-master/images/drawers.jpg);
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+  }
+
+  .card-text {
+    padding: 30px;
+  }
+
+  .card-text__title {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1%;
+    line-height: 28px;
+    color: var(--desaturated-dark-blue);
+  }
+  .card-footer {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 35px;
+  }
+
+  section {
+    height: 100%;
+  }
+
+  .card-text__excerpt {
+    margin-top: 10px;
+  }
+}
+
+/* FrontEnd Mentor Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
