@@ -47,7 +47,7 @@ body {
 .card-header {
   width: 327px;
   height: 202px;
-  background-image: url(/article-preview-component-master/images/drawers.jpg);
+  background-image: url(https://raw.githubusercontent.com/vazbaumax/article-preview-component-master/master/images/drawers.jpg);
   background-repeat: no-repeat no-repeat;
   background-position: center;
   background-size: cover;
@@ -149,11 +149,6 @@ body {
   .card-header {
     width: 100%;
     height: 280px;
-    background-image: url(/article-preview-component-master/images/drawers.jpg);
-    background-repeat: no-repeat no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 100%;
   }
 
   .card-text {
